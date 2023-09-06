@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akatab:wght@500&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <header>
@@ -28,6 +30,13 @@
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-pinterest"></i>
             </div>
+
+            <div class="nav container">
+            <i class="fas fa-shopping-cart" id="cart-icon"></i>
+             
+
+             </div>
+        </div>
         </nav>
 
         <!--Nav1 end-->
@@ -86,31 +95,89 @@
             <h1>New <span>Arrivals</span></h1>
             <p>We are thrilled to share with you all the lovely new arrivals that just hit our store. Hope you love it as much as we do!</p>
         </div>
-        <!-- <div class="card">
-            <div>
-                <img src="https://img.freepik.com/premium-photo/girl-woman-wearing-white-blank-t-shirt-with-space-your-logo-mock-up-design-casual-urban-style_174699-1339.jpg?w=2000" alt="">
-            </div>
-            <h1>Branded Shirts</h1>
-            <span>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-            </span>
-            <p>$500.00</p>
-            <button>Add to cart </button>
-        </div> -->
-        <section id="product1" class="section-p1">
+        
+        <div class="products">
             
-            <div class="container">
-              <div class="products"></div>
           </div>
-        </section>
+
+          
 
           
       
     </section>
     <!--end -->
+
+
+
+    
+      
     <script src="script.js"></script>   
+
+    <section class="trends">
+        <div class="Product-Intro">
+            <h1>Top<span>Trends</span></h1>
+            <p>Life is short. Look good every day.</p>
+        </div>
+
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://images.pexels.com/photos/949670/pexels-photo-949670.jpeg?cs=srgb&dl=pexels-godisable-jacob-949670.jpg&fm=jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://img.freepik.com/premium-photo/female-hipster-leaning-colorful-graffiti-wall-denim-clothes-city-street_176841-27918.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://thumbs.dreamstime.com/b/fashion-pretty-cool-youngwith-shopping-bags-wearing-black-hat-white-pants-over-colorful-orange-background-79063329.jpg" />
+              </div>
+
+              <div class="swiper-pagination"></div>
+  </div>
+
+    </section>
+
+    <footer>
+        <div  >
+            <h1>Magic <span>Mart</span></h1>
+                <p>Everything and Everywhere </p>
+        </div>
+        <div >
+            <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest"></i>
+                <p><br> Design by Anisha Khatri</p>
+        </div>
+        <div>
+            <p>
+                @2023 copyright All rights Reserved
+            </p>
+        </div>
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 1200,
+            modifier: 1,
+            slideShadows: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
 </body>
 </html>

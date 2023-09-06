@@ -4,12 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
       try {
           let data = await fetch(url);
           let response = await data.json();
-          let i=0;
 
           response.forEach(function (product)
           {
               let description = product.description;
-              let title = product.title;
+            //   let title = product.title;
 
               products.innerHTML += `
      <div class="product d-flex jutify-content-center">
@@ -36,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
              <h3 class="product-price text-center">$${product.price}</h3>
              <div class="d-flex justify-content-between">
              <a href="#!" data-productid="${product.id}" class="add-to-cart">
-             <i class="fal fa-shopping-cart"></i>
+             <i class="fas fa-shopping-cart"></i>
              </a>
              <a href="#" class="shop-now"></a>
          </div>
